@@ -26,7 +26,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
     return <div className="bg-slate-200 lg:bg-white h-screen flex justify-center flex-col">
         <div className="flex justify-center">
             <div className="">
-                <div className="rounded-3xl border-8 p-10 border-gray-700">
+                <div className="rounded-3xl border-8 p-8 border-gray-700">
                     <div className="flex justify-center flex-col block lg:hidden mb-10">
                         <div className="flex justify-center text-3xl font-bold">
                             Medium-Clone
