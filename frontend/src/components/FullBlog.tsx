@@ -3,7 +3,6 @@ import { Appbar } from "./Appbar"
 import { Avatar, formatDateString } from "./BlogCard"
 
 export const FullBlog =({blog}: {blog: Blog}) =>{
-
     const date = String (blog.date)
 
     return <div>

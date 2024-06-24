@@ -15,6 +15,7 @@ export const BlogCard = ({
     content,
     publishedDate
 }: BlogCardProps) =>{
+
     return <Link to={`/blog/${id}`}>
     <div className="p-4 border-b border-slate-400 pb-4 w-screen max-w-screen-md cursor-pointer">
         <div className="flex">
@@ -28,7 +29,8 @@ export const BlogCard = ({
                 <Circle/>
             </div>
             <div className="pl-2 text-slate-500 text-sm flex justify-center flex-col">
-                {formatDateString(publishedDate)},</div>  
+                {formatDateString(publishedDate)}, {time(publishedDate)}
+            </div>  
         </div>
         <div className="text-xl font-bold pt-2 font-serif">
             {title}
@@ -79,4 +81,9 @@ export function formatDateString(dateString: string) {
     const monthName = monthNames[monthIndex];
 
     return `${dayWithSuffix} ${monthName}, ${year}`;
+}
+
+export function time(dateString: string){
+    const timeString = dateString.split('T')[1].split('.')[0];
+    return timeString
 }
