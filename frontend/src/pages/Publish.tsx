@@ -13,6 +13,14 @@ export const Publish = () => {
         <Appbar />
         <div className="flex justify-center w-full p-8 "> 
             <div className="max-w-screen-lg w-full">
+                <button type="button" onClick = {() => {
+                        navigate(`/blogs`)
+                    }} className="mb-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2">
+                        Go back
+                    <svg className="pl-1 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </button>
                 <input onChange={(e) => {
                     setTitle(e.target.value)
                 }} type="text" className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Title" />
