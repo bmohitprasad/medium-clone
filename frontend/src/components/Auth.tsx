@@ -40,8 +40,9 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
                             Made by Mohit
                         </div>
                     </div>
-                    <div className="px-6">
-                    <div className="flex justify-center text-3xl font-extrabold">
+                    <div className="rounded-3xl border-8 border-slate-200 lg:border-gray-700">
+                    <div className="px-16">
+                    <div className="flex justify-center text-3xl font-extrabold pt-0 lg:pt-16">
                         Create an account
                     </div>
                     <div className="text-slate-500 flex justify-center">
@@ -51,7 +52,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="pt-8">
+                <div className="pt-8 mr-2 ml-2">
                     {type === "signup" ? <LabelledInput label="Name" placeholder="Your Name" onChange={(e) => {
                         setPostInputs({
                             ...postInputs,
@@ -70,7 +71,8 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
                             password: e.target.value
                         })
                     }} />
-                    <button onClick={sendRequest} type="button" className="mt-8 w-full text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">{type === "signup" ? "Sign up" : "Sign in"}</button>
+                    <button onClick={sendRequest} type="button" className="mt-8 w-full text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 lg:mb-16">{type === "signup" ? "Sign up" : "Sign in"}</button>
+                </div>
                 </div>
             </div>
         </div>
