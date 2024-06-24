@@ -13,14 +13,6 @@ export const Publish = () => {
         <Appbar />
         <div className="flex justify-center w-full p-8 "> 
             <div className="max-w-screen-lg w-full">
-                <button type="button" onClick = {() => {
-                        navigate(`/blogs`)
-                    }} className="mb-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2">
-                        Go back
-                    <svg className="pl-1 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </button>
                 <input onChange={(e) => {
                     setTitle(e.target.value)
                 }} type="text" className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Title" />
@@ -28,7 +20,8 @@ export const Publish = () => {
                 <TextEditor onChange={(e) => {
                     setDescription(e.target.value)
                 }} />
-                <button onClick={async () => {
+                <div className="flex justify-between">
+                    <button onClick={async () => {
                     const response = await axios.post(`${BACKEND_URL}/api/v1/blog`, {
                         title,
                         content: description
@@ -38,9 +31,20 @@ export const Publish = () => {
                         }
                     });
                     navigate(`/blog/${response.data.id}`)
-                }} type="submit" className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">
+                }} type="submit" className="mb-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2">
                     Publish post
                 </button>
+                <button type="button" onClick = {() => {
+                        navigate(`/blogs`)
+                    }} className="mb-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2">
+                        Go back
+                    <svg className="pl-1 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </button>
+
+                </div>
+                
             </div>
         </div>
     </div>

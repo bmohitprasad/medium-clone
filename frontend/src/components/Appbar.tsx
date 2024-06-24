@@ -27,7 +27,7 @@ export const Appbar = ()=>{
                     sessionStorage.removeItem('authToken'); 
                   }
             }>
-                <button type="button" className=" pl-4">
+                <button type="button" className="pl-4">
                 <FaSignOutAlt style={{ marginRight: '12px' }} />
                 Signout
                 </button>
