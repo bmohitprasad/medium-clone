@@ -28,10 +28,10 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
             <div className="">
                 <div className="rounded-3xl border-8 p-8 border-gray-700">
                     <div className="flex justify-center flex-col block lg:hidden mb-10">
-                        <div className="flex justify-center text-3xl font-bold">
+                        <div className="flex justify-center text-3xl font-bold font-mono">
                             Medium-Clone
                         </div>
-                        <div className="flex justify-center max-w-sm text-xl text-left mt-4 mb-2">
+                        <div className="flex justify-center max-w-sm text-xl text-left mt-4 mb-2 font-light">
                             This is a blogging platform that replicates the functionality and user experience of Medium, a popular online publishing platform. This website allows users to create, publish, and share their stories with a wide audience.
                         </div>
                         <div className="text-slate-500 flex justify-center max-w-sm text-md">
