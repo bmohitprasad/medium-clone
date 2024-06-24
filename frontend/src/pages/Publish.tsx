@@ -11,7 +11,7 @@ export const Publish = () => {
 
     return <div>
         <Appbar />
-        <div className="flex justify-center w-full pt-8 mr-2"> 
+        <div className="flex justify-center w-full p-8 "> 
             <div className="max-w-screen-lg w-full">
                 <input onChange={(e) => {
                     setTitle(e.target.value)
