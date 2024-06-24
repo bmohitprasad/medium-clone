@@ -28,8 +28,7 @@ export const BlogCard = ({
                 <Circle/>
             </div>
             <div className="pl-2 text-slate-500 text-sm flex justify-center flex-col">
-                {formatDateString(publishedDate)}, {time(publishedDate)}
-            </div>  
+                {formatDateString(publishedDate)},</div>  
         </div>
         <div className="text-xl font-bold pt-2 font-serif">
             {title}
@@ -80,9 +79,4 @@ export function formatDateString(dateString: string) {
     const monthName = monthNames[monthIndex];
 
     return `${dayWithSuffix} ${monthName}, ${year}`;
-}
-
-export function time(dateString: string){
-    const timeString = dateString.split('T')[1].split('.')[0];
-    return timeString
 }
