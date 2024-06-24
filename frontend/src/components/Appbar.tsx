@@ -10,7 +10,7 @@ export const Appbar = ()=>{
 
     const authorName = blogs.length > 0 ? blogs[0].author.name : "Anonymous"
     
-    return <div className="border-b flex justify-between px-10 py-4">
+    return <div className="border-2 border-black bg-slate-200 flex justify-between px-10 py-4">
         <Link to={`/blogs`} className="font-mono text-lg flex flex-col justify-center cursor-pointer">
                 Medium
         </Link>
