@@ -1,8 +1,7 @@
 **Project Name: BlogMate**
-
+---
 
 link: https://medium-bmohitp.vercel.app/signup
----
 
 ## Description:
 
