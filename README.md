@@ -55,7 +55,7 @@ BlogMate is a blogging platform where users can sign up, create blog posts, and 
 
 1. **Clone the repository:**
    ```
-   git clone <repository-url>
+   git clone https://github.com/bmohitprasad/medium-clone.git
    ```
 
 2. **Install dependencies:**
