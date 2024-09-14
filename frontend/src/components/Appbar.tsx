@@ -8,7 +8,7 @@ export const Appbar = () =>{
     
     return <div className="border-b-2 border-black rounded-b-2xl flex justify-between px-4 py-4"> 
     {/* bg-slate-200 */}
-        <Link to={`/blogs`} className="font-bebas-neue text-xl flex flex-col justify-center cursor-pointer lg:text-3xl">
+        <Link to={`/blogs`} className="font-bebas-neue text-2xl flex flex-col justify-center cursor-pointer lg:text-3xl">
                 Medium
         </Link>
         <div className="flex justify-center">
