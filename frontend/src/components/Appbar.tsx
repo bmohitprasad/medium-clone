@@ -6,7 +6,8 @@ export const Appbar = () =>{
 
     const authorName = localStorage.getItem("name") || "Anonymous"
     
-    return <div className="border-b-4 border-black rounded-b-2xl bg-slate-200 flex justify-between px-4 py-4">
+    return <div className="border-b-2 border-black rounded-b-2xl flex justify-between px-4 py-4"> 
+    {/* bg-slate-200 */}
         <Link to={`/blogs`} className="font-mono  flex flex-col justify-center cursor-pointer lg:text-xl">
                 Medium
         </Link>
