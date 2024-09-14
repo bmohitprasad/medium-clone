@@ -25,12 +25,12 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
         }
     }
     
-    return <div className="bg-slate-200 lg:bg-white h-screen flex justify-center flex-col">
+    return <div className="bg-slate-200 h-auto w-full flex justify-center flex-col">
         <div className="flex justify-center">
-            <div className="m-2">
-                <div className="rounded-3xl border-8 p-8 border-gray-700 lg:border-white">
-                    <div className="flex justify-center flex-col block lg:hidden mb-10">
-                        <div className="flex justify-center text-3xl font-bold font-mono">
+            <div className="ml-2">
+                <div className="rounded-3xl border-8 p-8 border-gray-700">
+                    <div className="flex justify-center flex-col mb-10">
+                        <div className="flex justify-center text-3xl font-bebas-neue">
                             Medium-Clone
                         </div>
                         <div className="flex justify-center max-w-sm text-xl text-left mt-4 mb-2 font-light">
@@ -40,7 +40,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
                             Made by Mohit
                         </div>
                     </div>
-                    <div className="rounded-3xl border-8 border-slate-200 lg:border-gray-700">
+                    <div className="">
                     <div className="px-2 lg:px-16">
                     <div className="flex justify-center text-3xl font-extrabold pt-0 lg:pt-16">
                         {type === "signin" ? "Sign in" : "Create an Account" }
@@ -71,7 +71,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
                             password: e.target.value
                         })
                     }} />
-                    <button onClick={sendRequest} type="button" className="mt-8 w-full text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 lg:mb-16">{type === "signup" ? "Sign up" : "Sign in"}</button>
+                    <button onClick={sendRequest} type="button" className="mt-8 w-full text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 lg:mb-8">{type === "signup" ? "Sign up" : "Sign in"}</button>
                 </div>
                 </div>
             </div>
