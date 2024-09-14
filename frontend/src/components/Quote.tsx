@@ -1,16 +1,14 @@
 
 export const Quote = () =>{
-    return <div className="bg-slate-200 h-screen flex justify-center flex-col">
+    return <div className="bg-slate-200 flex justify-center flex-col h-auto">
         <div className="flex justify-center">
             <div className="p-4">
-                <div className="flex justify-center text-3xl font-bold font-mono">
-                    Medium-Clone
+                <div className="flex justify-center text-2xl font-bebas-neue">
+                  How to Use the Blogs Page
                 </div>
-                <div className="flex justify-center max-w-xl text-xl text-left mt-4 mb-2 font-light">
-                    This is a blogging platform that replicates the functionality and user experience of Medium, a popular online publishing platform. This website allows users to create, publish, and share their stories with a wide audience.
-                </div>
-                <div className="text-slate-500 flex justify-center max-w-xl text-md">
-                    Made by Mohit
+                <div className="flex justify-center max-w-md text-left mt-4 mb-2 font-light">
+                Welcome to the Blogs page! Here, you can browse through a variety of blog posts from other users.
+                Click on any blog title to read the full post. If you're logged in, you can create and publish your own blogs!
                 </div>
             </div>
         </div>
