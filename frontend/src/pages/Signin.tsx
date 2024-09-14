@@ -4,7 +4,7 @@ import { DescriptionCard } from "../components/DescriptionCard"
 
 export const Signin = () => {
     return <div className="">
-        <div className="bg-slate-200 h-full w-full flex justify-center grid grid-cols-1 lg:grid-cols-2">
+        <div className="bg-slate-200 h-full w-full mr-2 flex justify-center grid grid-cols-1 lg:grid-cols-2">
             <div className="mt-4">
                 <Auth type="signin"/>
             </div>
