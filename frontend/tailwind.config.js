@@ -15,6 +15,10 @@ export default {
       fontFamily: {
         'bebas-neue': ['"Bebas Neue"', 'sans-serif'],
       },
+      width: {
+        '900': '56rem',
+        '901': '31rem',
+      }
     },
   },
   plugins: [],

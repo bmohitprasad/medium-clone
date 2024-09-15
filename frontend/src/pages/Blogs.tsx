@@ -8,9 +8,9 @@ export const Blogs = () => {
     const {loading, blogs} = useBlogs()
 
     if (loading){
-        return<div className="bg-color4 text-color1 ">
+        return<div className="bg-color4 h-full text-color1 w-full">
             <Appbar/>
-            <div className="flex justify-center">
+            <div className="flex justify-center p-4 w-full flex-wrap lg:flex-nowrap">
                 <div>
                     <BlogSkeleton/>
                     <BlogSkeleton/>
