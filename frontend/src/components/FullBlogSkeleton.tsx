@@ -1,9 +1,9 @@
 import { Appbar } from "./Appbar"
 
 export const FullBlogSkeleton=()=>{
-    return <div>
+    return <div className="bg-color4 text-color1">
     <Appbar/>
-    <div className="flex justify-center animate-pulse">
+    <div className="flex justify-center animate-pulse bg-color4 text-color1">
         <div className="grid grid-cols-12 w-full px-10 pt-200 max-w-screen-xl pt-10">
             <div className="col-span-12 lg:col-span-8"> 
         <div className="text-5xl font-extrabold">

@@ -1,6 +1,6 @@
 
 export const DescriptionCard = () =>{
-    return <div className="p-2">
+    return <div className="p-2 text-color1">
 
         <h3 className="text-xl font-semibold mt-4">Features:</h3>
 

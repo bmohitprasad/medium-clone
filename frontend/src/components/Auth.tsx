@@ -25,10 +25,10 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
         }
     }
     
-    return <div className="bg-slate-200 h-auto w-full flex justify-center flex-col">
+    return <div className="bg-color4 text-color1 h-auto w-full flex justify-center flex-col">
         <div className="flex justify-center">
             <div className="ml-2 mr-2">
-                <div className="rounded-3xl border-8 p-8 border-gray-700">
+                <div className="rounded-3xl border-8 p-8 border-color2">
                     <div className="flex justify-center flex-col mb-10">
                         <div className="flex justify-center text-3xl font-bebas-neue">
                             Medium-Clone
@@ -71,7 +71,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
                             password: e.target.value
                         })
                     }} />
-                    <button onClick={sendRequest} type="button" className="mt-8 w-full text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 lg:mb-8">{type === "signup" ? "Sign up" : "Sign in"}</button>
+                    <button onClick={sendRequest} type="button" className="mt-8 w-full text-color1 bg-color3 border-2 border-color2 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 lg:mb-8">{type === "signup" ? "Sign up" : "Sign in"}</button>
                 </div>
                 </div>
             </div>
@@ -90,6 +90,6 @@ interface LabelledInputType {
 function LabelledInput({ label, placeholder, onChange, type }: LabelledInputType) {
     return <div>
         <label className="block mb-2 text-sm text-black font-semibold pt-4">{label}</label>
-        <input onChange={onChange} type={type || "text"} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder={placeholder} required />
+        <input onChange={onChange} type={type || "text"} className="bg-gray-50 border border-color1 text-color4 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder={placeholder} required />
     </div>
 }

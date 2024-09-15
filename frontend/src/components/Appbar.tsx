@@ -6,25 +6,26 @@ export const Appbar = () =>{
 
     const authorName = localStorage.getItem("name") || "Anonymous"
     
-    return <div className="border-b-2 border-black rounded-b-2xl flex justify-between px-4 py-4"> 
+    return <div className="border-b-2 border-color2 bg-color4 text-color1 rounded-b-2xl flex justify-between px-4 py-4"> 
     {/* bg-slate-200 */}
         <Link to={`/blogs`} className="font-bebas-neue text-2xl flex flex-col justify-center cursor-pointer lg:text-3xl">
                 Medium
         </Link>
         <div className="flex justify-center">
             <Link to={`/publish`}>
-                <button type="button" className=" mr-2 text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center text-xs lg:text-sm">New +</button>
+                <button type="button" className="flex text-color1 bg-color3 border-2 border-color2 font-semibold rounded-full text-sm px-5 py-2.5 text-center text-xs">New +</button>
             </Link>
-            <Avatar size={"big"} name = {authorName}/>
+            <div className="flex ml-2">
+                <Avatar size={"big"} name = {authorName}/>
+            </div>
             <Link to={`/signin`} onClick={
                 () => {
                     localStorage.removeItem('token'); 
                     sessionStorage.removeItem('token'); 
                   }
             }>
-                <button type="button" className="pl-4 lg:pl-2 text-md">
-                <FaSignOutAlt style={{ marginRight: '12px' }} />
-                Logout
+                <button type="button" className="flex bg-color3 rounded-full ml-2 p-2 text-xs font-bold border-2 border-color2 text-color1">
+                <div className="p-1"><FaSignOutAlt/></div>
                 </button>
             </Link>
         </div>
