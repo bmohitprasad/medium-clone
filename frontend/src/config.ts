@@ -1,1 +1,3 @@
-export const BACKEND_URL = "https://medium-backend.bmohitprasad.workers.dev"
+export const BACKEND_URL = 
+"http://localhost:8787"
+// "https://medium-backend.bmohitprasad.workers.dev"
