@@ -112,6 +112,9 @@ blogRouter.get('/bulk', async (c) => {
                     name: true
                 }
             }
+        },
+        orderBy: {
+            date: 'desc' // This orders the blogs by date in descending order (newest first)
         }
     });
 

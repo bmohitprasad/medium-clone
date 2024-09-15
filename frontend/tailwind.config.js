@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     colors:{
-      color4: '#6eacda',
+      color4: '#bfdbfe',
       color3: '#d9f99d',
       color2: '#03346e',
       color1: '#021526'

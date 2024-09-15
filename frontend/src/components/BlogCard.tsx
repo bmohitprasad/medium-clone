@@ -45,16 +45,16 @@ export const BlogCard: React.FC<BlogCardProps> = ({
                     <div className="flex">
                         <Avatar size={'small'} name={authorName} />
                     </div>
-                    <div className="pl-2 text-sm flex justify-center flex-col">{authorName}</div>
+                    <div className="pl-2 text-sm font-mono flex justify-center flex-col">{authorName}</div>
                     <div className="flex justify-center flex-col pl-2">
                         <Circle />
                     </div>
-                    <div className="pl-2 text-slate-500 text-sm flex justify-center flex-col">
+                    <div className="font-sans pl-2 text-slate-500 text-sm flex justify-center flex-col">
                         {formatDateString(updatedDate.toISOString())}, {time(updatedDate.toISOString())}
                     </div>
                 </div>
-                <div className="text-xl font-bold pt-2 font-serif">{title}</div>
-                <div className="text-md font-light ">{content.slice(0, 100) + '...'}</div>
+                <div className="text-xl font-bold pt-2 font-sans">{title}</div>
+                <div className="text-md font-light font-sans">{content.slice(0, 100) + '...'}</div>
                 <div className="text-slate-500 text-sm font-light pt-4">{`${Math.ceil(
                     content.length / 100
                 )} minute(s) read`}</div>
@@ -74,7 +74,7 @@ export function Avatar({ name, size = 'small' }: { name: string; size: 'small' |
                 size === 'small' ? 'w-6 h-6' : 'w-10 h-10'
             }`}
         >
-            <span className={`${size === 'small' ? 'text-xs' : 'text-md'} text-gray-600 dark:text-gray-300`}>
+            <span className={`${size === 'small' ? 'text-xs' : 'text-md'} font-sans`}>
                 {name[0]}
             </span>
         </div>
