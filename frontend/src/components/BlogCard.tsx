@@ -40,7 +40,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({
 
     return (
         <Link to={`/blog/${id}`}>
-            <div className="p-4 mt-2  mr-2 border border-color2 rounded-xl bg-color4 text-color1 pb-4 w-screen max-w-screen-md cursor-pointer">
+            <div className="p-4 my-2 border-2 border-color2 rounded-xl bg-color4 text-color1 pb-4 min-w-full w-full cursor-pointer">
                 <div className="flex">
                     <div className="flex">
                         <Avatar size={'small'} name={authorName} />

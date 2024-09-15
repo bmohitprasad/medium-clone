@@ -8,7 +8,7 @@ export const Blogs = () => {
     const {loading, blogs} = useBlogs()
 
     if (loading){
-        return<div className=" bg-color4 text-color1">
+        return<div className="bg-color4 text-color1 ">
             <Appbar/>
             <div className="flex justify-center">
                 <div>
@@ -26,10 +26,10 @@ export const Blogs = () => {
         </div>
     }
 
-    return <div className="bg-color4 h-full text-color1">
+    return <div className="bg-color4 h-full text-color1 w-full">
         <Appbar/>
-        <div className="flex justify-center w-full flex-wrap lg:flex-nowrap">
-            <div className="flex ml-4">
+        <div className="flex justify-center p-4 w-full flex-wrap lg:flex-nowrap">
+            <div className="flex">
                 <div>
                     {blogs.map(blog =>
                     <BlogCard
