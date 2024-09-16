@@ -6,13 +6,13 @@ export const FullBlogSkeleton=()=>{
     <div className="flex justify-center animate-pulse bg-color4 text-color1">
         <div className="grid grid-cols-12 w-full px-10 pt-200 max-w-screen-xl pt-10">
             <div className="col-span-12 lg:col-span-8"> 
-        <div className="text-5xl font-extrabold">
-            <div className="h-4 bg-gray-200 rounded-full max-w-[600px] mb-4"></div>
-            <div className="h-4 bg-gray-200 rounded-full max-w-[500px] mb-4"></div>
-            <div className="h-4 bg-gray-200 rounded-full max-w-[700px] mb-2"></div>
+        <div className="">
+            <div className="h-4 bg-gray-500 rounded-full max-w-[600px] mb-4"></div>
+            <div className="h-4 bg-gray-500 rounded-full max-w-[500px] mb-4"></div>
+            <div className="h-4 bg-gray-500 rounded-full max-w-[700px] mb-2"></div>
         </div>
-        <div className="text-slate-500 pt-2">
-            <div className="h-2 bg-gray-200 rounded-full max-w-[300px] mb-2.5"></div>
+        <div className="pt-2">
+            <div className="h-2 bg-gray-500 rounded-full max-w-[300px] mb-2.5"></div>
         </div>
         <div className="pt-6">
             <ContentSkeleton/>
@@ -28,7 +28,7 @@ export const FullBlogSkeleton=()=>{
             </div>
             <div>
                 <div className="text-xl font-bold">
-                    <div className="h-4 bg-gray-200 rounded-full max-w-[100px] mb-2"></div>
+                    <div className="h-4 bg-gray-500 rounded-full max-w-[100px] mb-2"></div>
                 </div>
                 <div className="pt-2 text-slate-500"> 
                     Random catch phrase about the author's ability to grab the user's attention
@@ -51,46 +51,46 @@ function AvatarSkeleton(){
 
 function ContentSkeleton(){
     return <div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[780px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full  mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[650px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-8"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[780px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full  mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[500px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[650px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-8"></div>
 
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[780px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full  mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[650px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-8"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[780px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full  mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[500px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[650px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-8"></div>
 
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[780px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full  mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[650px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-8"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[780px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full  mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[500px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[650px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-8"></div>
 
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[780px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full  mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[650px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-8"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[780px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full  mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[500px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[650px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-8"></div>
 
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[780px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full  mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[650px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-8"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[780px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full  mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[500px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[650px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-8"></div>
 
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[780px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full  mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[500px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[650px] mb-2.5"></div>
-        <div className="h-2 bg-gray-200 rounded-full max-w-[700px] mb-8"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[780px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full  mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[500px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[650px] mb-2.5"></div>
+        <div className="h-2 bg-gray-500 rounded-full max-w-[700px] mb-8"></div>
     </div>
 }

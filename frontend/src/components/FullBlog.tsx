@@ -6,7 +6,7 @@ export const FullBlog = ({ blog }: { blog: Blog }) => {
   const date = String(blog.date);
 
   return (
-    <div>
+    <div className="bg-color4">
       <Appbar />
       <div className="flex justify-center bg-color4 text-color1">
         <div className="grid grid-cols-12 w-full px-10 pt-10 max-w-screen-xl">

@@ -13,7 +13,7 @@ export const Appbar = () =>{
         </Link>
         <div className="flex justify-center">
             <Link to={`/publish`}>
-                <button type="button" className="flex text-color1 bg-color3 border-2 border-color2 font-semibold rounded-full text-sm px-5 py-2.5 text-center text-xs">New +</button>
+                <button type="button" className="flex text-color1 hover:text-white bg-color3 hover:bg-green-600 border-2 border-color2 font-semibold rounded-full text-sm px-5 py-2.5 text-center text-xs">New +</button>
             </Link>
             <div className="flex ml-2">
                 <Avatar size={"big"} name = {authorName}/>
@@ -24,7 +24,7 @@ export const Appbar = () =>{
                     sessionStorage.removeItem('token'); 
                   }
             }>
-                <button type="button" className="flex bg-color3 rounded-full ml-2 p-2 text-xs font-bold border-2 border-color2 text-color1">
+                <button type="button" className="flex bg-color3 hover:bg-gray-700 rounded-full ml-2 p-2 text-xs font-bold border-2 border-color2 text-color1">
                 <div className="p-1"><FaSignOutAlt/></div>
                 </button>
             </Link>
