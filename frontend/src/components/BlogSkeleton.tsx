@@ -18,7 +18,6 @@ export const BlogSkeleton = () => {
                 <div className="h-2 rounded-full mt-2 p-1.5 bg-gray-500 max-w-[600px]"></div>
                 <div className="h-2 mt-2 p-1 rounded-full bg-gray-500 mb-2.5 max-w-[800px]"></div>
                 <div className="h-2 mt-2 p-1 rounded-full bg-gray-500 mb-2.5 max-w-[900px]"></div>
-                <div className="h-2 mt-2 p-1 rounded-full bg-gray-500 mb-2.5 max-w-[850px]"></div>
                 <div className="text-color2 text-sm font-light pt-4">0 minute(s) read</div>
                 
             </div>
