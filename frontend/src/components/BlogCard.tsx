@@ -41,7 +41,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({
     return (
         <Link to={`/blog/${id}`}>
             <div className="p-4 my-2 border-2 border-color2 rounded-xl bg-color4 text-color1 pb-4 min-w-full max-w-4xl w-full cursor-pointer">
-                <div className="flex">
+                <div className="flex justify-left">
                     <div className="flex">
                         <Avatar size={'small'} name={authorName} />
                     </div>
@@ -49,7 +49,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({
                     <div className="flex justify-center flex-col pl-2">
                         <Circle />
                     </div>
-                    <div className="font-sans pl-2 text-slate-500 text-sm flex justify-center flex-col">
+                    <div className="font-sans pl-2 mb-1 text-color2 text-sm flex justify-center flex-col">
                         {formatDateString(updatedDate.toISOString())}, {time(updatedDate.toISOString())}
                     </div>
                 </div>
@@ -64,7 +64,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({
 };
 
 export function Circle() {
-    return <div className="h-1 w-1 rounded-full bg-slate-400"></div>;
+    return <div className="h-1 w-1 rounded-full bg-color2"></div>;
 }
 
 export function Avatar({ name, size = 'small' }: { name: string; size: 'small' | 'big' }) {

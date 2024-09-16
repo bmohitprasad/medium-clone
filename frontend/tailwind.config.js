@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     colors:{
+      color5: '#374151',
       color4: '#bfdbfe',
       color3: '#d9f99d',
       color2: '#03346e',
@@ -15,10 +16,6 @@ export default {
       fontFamily: {
         'bebas-neue': ['"Bebas Neue"', 'sans-serif'],
       },
-      width: {
-        '900': '56rem',
-        '901': '31rem',
-      }
     },
   },
   plugins: [],
