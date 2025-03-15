@@ -9,6 +9,7 @@ import { BulkBlogs } from './pages/BulkBlogs'
 function App(){
   return(
     <>
+      <div className='bg-[#1E1E1E] h-screen'>
       <BrowserRouter>
           <Routes>
             <Route path="/home" element={<Home/>}/>
@@ -20,6 +21,7 @@ function App(){
             <Route path="/yourblogs" element={<UserBlogs/>}/>
           </Routes>
       </BrowserRouter>
+      </div>
     </>
   )
 }
