@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { Avatar } from "./BlogCard";
-import { FaSignOutAlt } from "react-icons/fa";
+// import { Avatar } from "./BlogCard";
+// import { FaSignOutAlt } from "react-icons/fa";
 
 export const Appbar = () => {
-    const authorName = localStorage.getItem("name") || "Anonymous";
+    // const authorName = localStorage.getItem("name") || "Anonymous";
 
     return (
         <div className="border-b-2 border-color2 bg-[#1E1E1E] text-[#EAEAEA] rounded-b-2xl flex justify-center px-6 py-4 shadow-md">
