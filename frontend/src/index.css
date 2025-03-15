@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ql-toolbar button svg {
+    filter: invert(1) brightness(1) !important; /* Make icons white */
+}
+
+.ql-toolbar button,
+.ql-toolbar .ql-picker-label,
+.ql-toolbar .ql-picker-item {
+    color: #F9FAFB !important; /* White text */
+}
+
+/* Ensure dropdown items are also visible */
+.ql-picker-options {
+    background-color: #1f2937 !important; /* Dark dropdown */
+    border: none !important;
+}
+
+.ql-picker-item {
+    color: #F9FAFB !important;
+}
+
+.ql-container {
+    background-color: #111827 !important; /* Dark background */
+    border: none !important;
+    color: #F9FAFB !important;
+}
+
+.ql-toolbar {
+    background-color: #1f2937 !important; /* Dark gray (Tailwind bg-gray-800) */
+    border: none !important;
+}

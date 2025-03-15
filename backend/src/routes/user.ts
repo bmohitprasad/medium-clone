@@ -36,9 +36,16 @@ userRouter.post('/signup', async (c) => {
         id: user.id
       }, c.env.JWT_SECRET);
       
-      const tokenName = jwt+"^"+user.name
+      const tokenName = jwt
+      const name = user.name
+      const userId = user.id
 
-      return c.text(tokenName)
+      return c.json({
+        tokenName,
+        name,
+        userId
+      })
+      
     } catch(e) {
       console.log(e);
       c.status(411);
@@ -47,13 +54,13 @@ userRouter.post('/signup', async (c) => {
   })
   
   
-  userRouter.post('/signin', async (c) => {
+userRouter.post('/signin', async (c) => {
     const body = await c.req.json();
     const { success } = signinInput.safeParse(body);
     if (!success) {
         c.status(411);
         return c.json({
-            message: "Inputs not correct"
+            message: "Inputs incorrect"
         })
     }
 
@@ -71,20 +78,26 @@ userRouter.post('/signup', async (c) => {
       if (!user) {
         c.status(403);
         return c.json({
-          message: "Incorrect creds"
+          message: "Incorrect credentials"
         })
       }
       const jwt = await sign({
         id: user.id
       }, c.env.JWT_SECRET);
   
-      const tokenName = jwt+"^"+user.name
+      const tokenName = jwt
+      const name = user.name
+      const userId = user.id
 
-      return c.text(tokenName)
+      return c.json({
+        tokenName,
+        name,
+        userId
+      })
       
     } catch(e) {
       console.log(e);
       c.status(411);
       return c.text('Invalid')
     }
-  })
+})

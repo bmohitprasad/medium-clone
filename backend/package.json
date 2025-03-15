@@ -6,8 +6,9 @@
   },
   "dependencies": {
     "@bmohitp/medium-commonfile": "^1.0.0",
-    "@prisma/client": "^5.15.1",
+    "@prisma/client": "^5.22.0",
     "@prisma/extension-accelerate": "^1.1.0",
+    "axios": "^1.8.3",
     "cors": "^2.8.5",
     "hono": "^4.4.7",
     "prisma": "^5.15.1"

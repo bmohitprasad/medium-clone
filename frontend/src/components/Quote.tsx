@@ -1,16 +1,18 @@
-
-export const Quote = () =>{
-    return <div className="bg-slate-200 flex justify-center flex-col h-auto">
-        <div className="flex justify-center">
-            <div className="p-4">
-                <div className="flex justify-center text-2xl font-bebas-neue">
-                  How to Use the Blogs Page
-                </div>
-                <div className="flex justify-center max-w-md text-left mt-4 mb-2 font-light">
-                Welcome to the Blogs page! Here, you can browse through a variety of blog posts from other users.
-                Click on any blog title to read the full post. If you're logged in, you can create and publish your own blogs!
+export const Quote = () => {
+    return (
+        <div className="sticky top-10 h-full text-white flex justify-center flex-col h-auto">
+            <div className="flex justify-center">
+                <div className="p-6 max-w-sm min-w-xs text-center bg-[#334155] rounded-lg shadow-md">
+                    <div className="text-2xl font-bebas-neue text-[#FACC15]">
+                        How to Use the Blogs Page
+                    </div>
+                    <p className="mt-4 text-[#E2E8F0] font-light leading-relaxed">
+                        Welcome to the Blogs page! Explore a diverse collection of blog posts shared by other users.  
+                        Click on any title to read the full post. If you're logged in, you can create and publish  
+                        your own blogs. Start sharing your thoughts today!
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-}
+    );
+};

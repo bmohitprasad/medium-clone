@@ -9,15 +9,15 @@ datasource db {
 }
 
 model User {
-  id  Int    @id @default(autoincrement())
-  name    String?
-  username String @unique
-  password String
-  blogs    Blog[]
+  id        Int    @id @default(autoincrement())
+  name      String?
+  username  String @unique
+  password  String
+  blogs     Blog[]
 }
 
 model Blog {
-  id  Int    @id @default(autoincrement())
+  id        Int    @id @default(autoincrement())
   authorId   Int
   content    String
   title       String

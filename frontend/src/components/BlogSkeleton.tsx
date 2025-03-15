@@ -1,26 +1,20 @@
-import { Avatar, Circle } from "./BlogCard"
 
 export const BlogSkeleton = () => {
-    return <div role="status" className="animate-pulse bg-color4">
-        <div className="p-4 my-2 border-2 border-color2 rounded-xl bg-color4 text-color1 pb-4 cursor-pointer 2xl:w-[1120px] xl:w-[766px] lg:w-[968px] md:w-[713px] sm:w-[586px]">
-                <div className="flex justify-left">
-                    <div className="flex bg-color1 rounded-full text-color4">
-                        <Avatar size={'small'} name="*" />
-                    </div>
-                    <div className="pl-2 text-color2 text-sm font-mono flex justify-center flex-col">username</div>
-                    <div className="flex justify-center flex-col pl-2">
-                        <Circle />
-                    </div>
-                    <div className="font-sans pl-2 mb-1 text-color2 text-sm flex justify-center flex-col">
-                        1st January, 2024, 00:00:00
-                    </div>
+    return (
+        <div role="status" className="animate-pulse">
+            <div className="p-5 bg-[#1E1E1E] shadow-lg border border-[#333] rounded-xl cursor-pointer">
+                <div className="flex items-center gap-3 mb-3">
+                    <div className="w-8 h-8 bg-[#444] rounded-full"></div>
+                    <div className="w-24 h-4 bg-[#444] rounded"></div>
+                    <div className="w-40 h-4 bg-[#444] rounded"></div>
                 </div>
-                <div className="h-2 rounded-full mt-2 p-1.5 bg-gray-500 max-w-[600px]"></div>
-                <div className="h-2 mt-2 p-1 rounded-full bg-gray-500 mb-2.5 max-w-[800px]"></div>
-                <div className="h-2 mt-2 p-1 rounded-full bg-gray-500 mb-2.5 max-w-[900px]"></div>
-                <div className="text-color2 text-sm font-light pt-4">0 minute(s) read</div>
-                
+                <div className="h-6 bg-[#444] rounded w-3/4"></div>
+                <div className="h-4 bg-[#444] rounded mt-2 w-full"></div>
+                <div className="h-4 bg-[#444] rounded mt-2 w-5/6"></div>
+                <div className="h-4 bg-[#444] rounded mt-2 w-4/6"></div>
+                <div className="h-4 bg-[#666] rounded mt-3 w-24"></div>
             </div>
-    <span className="sr-only">Loading...</span>
-</div>
-}
+            <span className="sr-only">Loading...</span>
+        </div>
+    );
+};

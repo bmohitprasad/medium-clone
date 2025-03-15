@@ -1,6 +1,7 @@
 import { createBlogInput, updateBlogInput } from "@bmohitp/medium-commonfile";
 import { PrismaClient } from "@prisma/client/edge";
 import { withAccelerate } from "@prisma/extension-accelerate";
+import axios from "axios";
 import { Hono } from "hono";
 import { verify } from "hono/jwt";
 
@@ -91,11 +92,11 @@ blogRouter.put('/', async (c) => {
     })
 
     return c.json({
-        id: blog.id
+        id: blog.id,
+        author: blog.authorId
     })
 })
 
-// Todo: add pagination
 blogRouter.get('/bulk', async (c) => {
     const prisma = new PrismaClient({
         datasourceUrl: c.env.DATABASE_URL,
@@ -114,7 +115,40 @@ blogRouter.get('/bulk', async (c) => {
             }
         },
         orderBy: {
-            date: 'desc' // This orders the blogs by date in descending order (newest first)
+            date: 'desc' 
+        }
+    });
+
+    return c.json({
+        blogs
+    })
+})
+
+blogRouter.get('/yourblogs', async (c) => {
+    
+    const userId = c.get("userId");
+
+    const prisma = new PrismaClient({
+        datasourceUrl: c.env.DATABASE_URL,
+    }).$extends(withAccelerate())
+    
+    const blogs = await prisma.blog.findMany({
+        select: {
+            content: true,
+            title: true,
+            id: true,
+            date: true,
+            author: {
+                select: {
+                    name: true
+                }
+            }
+        },
+        where: {
+            authorId: Number(userId)
+        },
+        orderBy: {
+            date: 'desc' 
         }
     });
 
