@@ -24,7 +24,7 @@ export const Sidebar = () => {
                         { icon: <FaHome />, label: "Home", link: "/blogs" },
                         { icon: <FaPen />, label: "Publish", link: "/publish" },
                         { icon: <FaBookOpen />, label: "My Blogs", link: "/yourblogs" },
-                        { icon: <FaCog />, label: "Settings", link: "/settings" },
+                        { icon: <FaCog />, label: "Settings", link: "/blogs" },
                         { icon: <FaSignOutAlt />, label: "Logout", link: "/home" },
                     ].map((item, index) => (
                         <a
