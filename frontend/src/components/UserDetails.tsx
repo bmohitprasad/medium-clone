@@ -1,5 +1,3 @@
-import { userDetails } from "../hooks"
-
 
 export interface UserDetails {
     username: string,
