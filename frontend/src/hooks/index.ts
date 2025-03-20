@@ -12,6 +12,12 @@ export interface Blog {
     "date": Date
 }
 
+export interface User {
+    "username": string
+    "name": string
+    "catchPhrase": string
+}
+
 export const useBlog = ({id}:{id: string}) =>{
     const [loading, setLoading] = useState(true)
     const [blog, setBlog] = useState<Blog>()
@@ -75,3 +81,25 @@ export const userBlogs = () =>{
         blogs
     }
 }
+
+export const userDetails = () => {
+    const [loading, setLoading] = useState(true)
+    const [details, setDetails] = useState<User | null>(null);
+
+    useEffect(() => {
+        axios.post(`${BACKEND_URL}/api/v1/user/details`, {
+            headers: {
+                userId: localStorage.getItem("userId")
+            }
+        })
+        .then(response => {
+            setDetails(response.data.user)
+            setLoading(false)
+        })
+    }, [])
+
+    return {
+        loading,
+        details
+    }
+} 

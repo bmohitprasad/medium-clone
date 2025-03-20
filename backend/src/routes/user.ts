@@ -101,3 +101,33 @@ userRouter.post('/signin', async (c) => {
       return c.text('Invalid')
     }
 })
+
+userRouter.post('/details', async (c) => {
+
+  const body = await c.req.json();
+
+  const prisma = new PrismaClient({
+    datasourceUrl: c.env.DATABASE_URL,
+  }).$extends(withAccelerate())
+
+  try {
+    const user = await prisma.user.findFirst({
+      where: {
+        id: body.id
+      },
+      select: {
+        username: true,
+        name: true,
+        catchPhrase: true
+      }
+    })
+
+    return c.json({
+      user
+    })
+
+  } catch(e) {
+    return c.text('Backend down.')
+  }
+
+})

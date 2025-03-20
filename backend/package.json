@@ -6,15 +6,16 @@
   },
   "dependencies": {
     "@bmohitp/medium-commonfile": "^1.0.0",
-    "@prisma/client": "^5.22.0",
-    "@prisma/extension-accelerate": "^1.1.0",
+    "@prisma/extension-accelerate": "^1.2.2",
     "axios": "^1.8.3",
     "cors": "^2.8.5",
     "hono": "^4.4.7",
-    "prisma": "^5.15.1"
+    "prisma": "^6.5.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240529.0",
+    "install": "^0.13.0",
+    "npm": "^11.2.0",
     "wrangler": "^4.0.0"
   }
 }
