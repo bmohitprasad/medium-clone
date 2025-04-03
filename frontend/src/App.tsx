@@ -6,6 +6,7 @@ import { UpdateBlog } from './pages/UpdateBlog'
 import { UserBlogs } from './pages/UserBlogs'
 import { BulkBlogs } from './pages/BulkBlogs'
 import { Profile } from './pages/Profile'
+import { Edit } from './pages/Edit'
 
 function App(){
   return(
@@ -21,6 +22,7 @@ function App(){
             <Route path="/updateblog" element={<UpdateBlog/>}/>
             <Route path="/yourblogs" element={<UserBlogs/>}/>
             <Route path="/profile" element={<Profile/>}/>
+            <Route path="/edit" element={<Edit/>}/>
           </Routes>
       </BrowserRouter>
       </div>

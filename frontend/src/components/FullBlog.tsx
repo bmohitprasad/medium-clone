@@ -1,4 +1,4 @@
-import { Blog } from "../hooks";
+import { Blog, userDetails } from "../hooks";
 import { Appbar } from "./Appbar";
 import { Avatar, formatDateString } from "./BlogCard";
 import DOMPurify from "dompurify";
@@ -6,6 +6,10 @@ import DOMPurify from "dompurify";
 export const FullBlog = ({ blog }: { blog: Blog }) => {
   const safeHTML = DOMPurify.sanitize(blog.content);
   const date = String(blog.date);
+
+  const userId = localStorage.getItem("userId");
+  const { loading, details } = userDetails({ userId });
+  
 
   return (
     <div className="bg-[#1E1E1E] min-h-screen text-color1">
@@ -40,7 +44,9 @@ export const FullBlog = ({ blog }: { blog: Blog }) => {
                   {blog.author.name || "Anonymous"}
                 </p>
                 <p className="text-gray-500 text-sm">
-                  Passionate writer & content creator ✍️
+                  {loading ? 
+                  <div>loading...</div> : 
+                  <div>{details?.catchPhrase}</div>}
                 </p>
               </div>
             </div>

@@ -82,16 +82,14 @@ export const userBlogs = () =>{
     }
 }
 
-export const userDetails = () => {
+export const userDetails = ( { userId } : { userId: any } ) => {
     const [loading, setLoading] = useState(true)
     const [details, setDetails] = useState<User | null>(null);
 
+    
     useEffect(() => {
-        axios.post(`${BACKEND_URL}/api/v1/user/details`, {
-            headers: {
-                userId: localStorage.getItem("userId")
-            }
-        })
+        
+        axios.post(`${BACKEND_URL}/api/v1/user/details`, { userId })
         .then(response => {
             setDetails(response.data.user)
             setLoading(false)

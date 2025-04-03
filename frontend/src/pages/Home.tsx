@@ -18,7 +18,7 @@ export const Home = () =>{
             name: "",
             username: "",
             password: ""
-        });
+    });
 
     const [loading, setLoading] = useState(false);
 
@@ -62,8 +62,6 @@ export const Home = () =>{
         }
     }
         
-        
-
     return <div className="flex items-center justify-center min-h-screen bg-[#1E1E1E]">
     <div className="max-w-3xl w-full py-24 px-8 bg-[#2A2A2A] shadow-md border border-[#444] hover:shadow-lg transition-all cursor-pointer rounded-lg flex">
         <div className="w-1/2 p-8">
@@ -151,7 +149,7 @@ export const Home = () =>{
     </div>
 }
 
-interface LabelledInputType {
+export interface LabelledInputType {
     label: string;
     placeholder: string;
     onChange: (e: ChangeEvent<HTMLInputElement>) => void;

@@ -11,7 +11,6 @@ export const Sidebar = () => {
                     isOpen ? "w-64" : "w-20"
                 }`}
             >
-                {/* Keep the button in the same place */}
                 <button
                     className="absolute top-5 left-5 text-white text-2xl focus:outline-none"
                     onClick={() => setIsOpen(!isOpen)}
